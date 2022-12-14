@@ -1,0 +1,78 @@
+
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <div class="row">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                    
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">States</th>
+        <th scope="col">Positive</th>
+        <th scope="col">Negative</th>
+        <th scope="col">Pending</th>
+        <th scope="col">HospitalizedCurrently</th>
+        <th scope="col">HospitalizedCumulative</th>
+        <th scope="col">inICUCurrently</th>
+        <th scope="col">inICUCumulative</th>
+        <th scope="col">onVentilatorCurrently</th>
+        <th scope="col">onVentilatorcumulative</th>
+        <th scope="col">DateChecked</th>
+        <th scope="col">Death</th>
+        <th scope="col">Hospitalized</th>
+        <th scope="col">TotalTestResults</th>
+        <th scope="col">LastModified</th>
+        <th scope="col">Recovered</th>
+        <th scope="col">Total</th>
+        <th scope="col">PosNeg</th>
+        <th scope="col">DeathIncreased</th>
+        <th scope="col">HospitalizedIncrease</th>
+        <th scope="col">NegativeIncrease</th>
+        <th scope="col">PositiveIncrease</th>
+        <th scope="col">TotalTestResultsIncrease</th>
+        <th scope="col">Hash</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of corona">
+        <th scope="row">{{i.date}}</th>
+        <td>{{i.states}}</td>
+        <td>{{i.positive}}</td>
+        <td>{{i.negative}}</td>
+        <td>{{i.pending}}</td>
+        <td>{{i.hospitalizedCurrently}}</td>
+        <td>{{i.hospitalizedCumulative}}</td>
+        <td>{{i.inIcuCurrently}}</td>
+        <td>{{i.inIcuCumulative}}</td>
+        <td>{{i.onVentilatorCurrently}}</td>
+        <td>{{i.onVentilatorCumulative}}</td>
+        <td>{{i.dateChecked}}</td>
+        <td>{{i.death}}</td>
+        <td>{{i.hospitalized}}</td>
+        <td>{{i.totalTestResults}}</td>
+        <td>{{i.lastModified}}</td>
+        <td>{{i.recovered}}</td>
+        <td>{{i.total}}</td>
+        <td>{{i.posNeg}}</td>
+        <td>{{i.deathIncrease}}</td>
+        <td>{{i.hospitalizedIncrease}}</td>
+        <td>{{i.negativeIncrease}}</td>
+        <td>{{i.positiveIncrease}}</td>
+        <td>{{i.totalTestResultsIncrease}}</td>
+        <td>{{i.hash}}</td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
